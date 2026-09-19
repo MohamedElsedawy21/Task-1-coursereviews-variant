@@ -10,6 +10,12 @@ import {
 
 const router = Router();
 
-// TODO: wire up the routes described in README.md section 3.
+// Collection routes
+router.get('/', getAllReviews);
+router.post('/', createReview);
+router.get('/summary', getCourseSummary);
+router.get('/:id', getReview);
+router.patch('/:id', updateReview);
+router.delete('/:id', deleteReview);
 
 export default router;
